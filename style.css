@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.flex-container {
+    display: flex;
+}
+
+/* The navbar styling */
+
+#navbar {
+    position: fixed;
+    background: rgb(238, 238, 238);
+    width: 300px;
+    border-right: 2px solid rgb(143, 143, 143);
+    border-bottom: 2px solid rgb(143, 143, 143);
+    ;
+}
+
+#navbar header {
+    padding: 20px 10px;
+}
+
+#navbar li {
+    list-style-type: none;
+    background-color: white;
+}
+
+#navbar li:hover {
+    background: rgb(221, 193, 193);
+}
+
+.nav-link {
+    display: block;
+    padding: 20px 30px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+}
+
+
+/* The main-doc styling */
+
+#main-doc {
+    background: white;
+    width: 100%;
+}
+
+.main-section code {
+    position: relative;
+    font-size: 1.3em;
+    right: -20px;
+}
+
+
+
+.main-section {
+    margin-left: 300px;
+    padding: 20px 80px;
+}
+
+.main-section h1 {
+    padding-bottom: 20px;
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-indent: -30px;
+}
+
+.main-section p {
+    padding-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.main-section li {
+    text-indent: 30px;
+    list-style-type: square;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #nav-bar {
+        position: relative;
+        width: 100%;
+        border-bottom: 5px solid rgb(143, 143, 143);
+        border-right: none;
+    }
+
+    #nav-bar header {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 10px 70px;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+    }
+
+    .main-section {
+        width: 100%;
+        padding: 20px 60px;
+        margin: 0;
+    }
+}
